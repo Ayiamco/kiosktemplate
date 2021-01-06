@@ -1,0 +1,157 @@
+.CF-con {
+  background-color: white;
+  border-radius: 7px;
+  margin: 1em 1em;
+  height: 6em;
+  padding: 3em 1em;
+}
+
+#CF-1,
+#CF-2,
+#CF-3,
+#CF-4 {
+  display: none;
+}
+
+.CF-con input {
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  width: calc(100% - 1em);
+  border: 1px solid var(--orange-1);
+  height: 30px;
+  border-radius: 5px;
+  background-color: var(--col-1);
+}
+.CF-con-desc {
+  color: var(--dark-blue-1);
+  font-family: "lato,san-serif";
+  padding: 0 1.5em;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+.CF-con button {
+  background-color: var(--orange-1);
+  color: white;
+  margin-top: 0.5em;
+  height: 30px;
+  border-radius: 5px;
+  width: 100%;
+  outline: none;
+  border: 1px solid var(--orange-1);
+}
+
+.CF-con button:hover {
+  background-color: var(--dark-blue-2);
+}
+@media (max-width: 1000px) and (min-width: 800px) {
+  .CF-con {
+    width: cal(100% - var(--padding-big-screen) - var(--padding-big-screen));
+    margin-left: var(--padding-big-screen);
+    margin-right: var(--padding-big-screen);
+  }
+  .CF-con-desc {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-bottom: 1em;
+  }
+  .CF-form {
+    display: flex;
+    justify-content: space-between;
+    height: 3em;
+    align-items: center;
+  }
+  .CF-con input {
+    width: calc(80% - 5em);
+    height: 95%;
+  }
+  .CF-con button {
+    width: 25%;
+    height: 100%;
+    margin-top: 0px;
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #CF-1,
+  #CF-2,
+  #CF-3,
+  #CF-4 {
+    display: block;
+    background-color: var(--orange-1);
+    opacity: 0.5;
+  }
+
+  .CF-con {
+    height: 15em;
+    margin-top: -10em;
+    width: cal(100vw - var(--padding-big-screen) - var(--padding-big-screen));
+    margin-left: 7em;
+    margin-right: 7em;
+    box-shadow: 0 5px 10px;
+    padding: 1em 10em;
+    margin-bottom: 0em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .CF-con form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .CF-con-desc {
+    font-weight: 700;
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .CF-form {
+    display: flex;
+    justify-content: space-between;
+    height: 3.5em;
+    align-items: center;
+    width: 100%;
+    margin-top: 0px;
+  }
+
+  .CF-con input {
+    width: calc(95% - 10em);
+    height: 95%;
+    margin-right: 1em;
+  }
+
+  .CF-con button {
+    width: 20%;
+    height: 100%;
+    margin-top: 0px;
+  }
+  #CF-1 {
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    margin-left: -70%;
+    margin-top: -9em;
+    position: absolute;
+  }
+
+  #CF-2 {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-left: -74%;
+    margin-top: 12em;
+    position: absolute;
+  }
+
+  #CF-3 {
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    margin-left: -53%;
+    margin-top: -6em;
+    position: absolute;
+  }
+}

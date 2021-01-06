@@ -1,0 +1,32 @@
+.PQC-counter-mn {
+  display: flex;
+  align-items: center;
+}
+.PQC-counter-mn > p {
+  margin-right: 1em;
+  font-size: larger;
+}
+
+.PQC-counter-con {
+  display: flex;
+  border: 1px solid;
+  width: 6em;
+  height: 2.5em;
+  justify-content: center;
+  margin: 1.5em 0;
+  align-items: center;
+  border: 1px solid #fd7e14;
+}
+
+.PQC-counter-item,
+.PQC-counter-display {
+  font-size: large;
+  padding: 0 0.5em;
+}
+
+.PQC-counter-item:hover {
+  font-size: larger;
+  background-color: gray;
+  color: white;
+  cursor: pointer;
+}

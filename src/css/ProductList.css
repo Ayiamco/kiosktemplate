@@ -1,0 +1,29 @@
+#AvailableProducts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 1em;
+}
+
+.Product-list-hd {
+  margin: 1em;
+  border-bottom: 1px solid grey;
+  padding-bottom: 0.5em;
+  margin-top: 5em;
+}
+
+@media only screen and (min-width: 700px) {
+  .Product-list-hd {
+    margin-top: 3em;
+  }
+
+  #AvailableProducts {
+    padding-right: var(--padding-big-screen);
+    padding-left: var(--padding-big-screen);
+  }
+}
+@media only screen and (min-width: 1000px) {
+  #AvailableProducts {
+    padding-bottom: 8em;
+  }
+}

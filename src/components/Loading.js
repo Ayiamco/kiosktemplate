@@ -1,0 +1,11 @@
+import React from 'react'
+import "../css/Loading.css"
+
+export default function Loading() {
+    return (
+        <div id="Loading-animation">
+            <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+        </div>
+            
+    )
+}

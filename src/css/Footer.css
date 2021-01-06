@@ -1,0 +1,124 @@
+.Footer-con-mn {
+  min-height: calc(100vh - 8em);
+  background-color: var(--dark-blue-2);
+  color: white;
+  max-width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 0px;
+}
+.Footer-container {
+  background-color: var(--dark-blue-2);
+  max-width: 100vw;
+  padding: 3em 0em;
+  margin-bottom: 0px;
+}
+
+.Footer-title,
+#Footer-working-hours-title {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+/* Footer contact info styles */
+
+.contact-info {
+  display: flex;
+  align-items: center;
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: "lato,sans-serif;";
+}
+
+.contact-info p {
+  margin-left: 0.5em;
+}
+/* ############################### */
+
+/* Footer Services and useful links styles */
+.Footer-services-link,
+.Footer-working-hours p,
+.contact-form-desc {
+  display: block;
+  margin-top: 1em;
+  font-weight: 500;
+  font-size: 1.2em;
+  font-family: "lato,sans-serif;";
+}
+
+.Footer-services,
+.Footer-usefull-links,
+.Footer-working-hours,
+.Footer-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 20em;
+  margin-top: 2em;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+.Footer-services-link:hover,
+.contact-info:hover {
+  color: var(--orange-1);
+  cursor: pointer;
+}
+
+/* ############################ */
+
+@media (max-width: 1009px) and (min-width: 800px) {
+  .Footer-con-mn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: var(--padding-big-screen);
+    padding-left: var(--padding-big-screen);
+    flex-wrap: wrap;
+  }
+
+  .Footer-services,
+  .Footer-contact,
+  .Footer-working-hours,
+  .Footer-usefull-links {
+    height: 20em;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  #Footer-working-hours-title {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (min-width: 1010px) {
+  .Footer-con-mn {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: var(--padding-big-screen);
+    padding-left: var(--padding-big-screen);
+    flex-wrap: wrap;
+  }
+  .Footer-services,
+  .Footer-contact,
+  .Footer-working-hours,
+  .Footer-usefull-links {
+    height: 20em;
+    width: 15em;
+  }
+
+  .Footer-services,
+  .Footer-usefull-links {
+    padding-left: 3em;
+  }
+
+  #Footer-working-hours-title {
+    margin-top: 0px;
+  }
+}

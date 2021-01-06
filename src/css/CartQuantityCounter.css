@@ -1,0 +1,29 @@
+/* .CQC-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(240, 243, 247);
+  padding: 0px;
+  height: 32px;
+}
+
+.CQC {
+  background-color: gray;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+.CQC:hover {
+  background-color: rgb(216, 210, 210);
+}
+
+.CQC-num {
+  margin: none;
+  font-size: 15px;
+  color: #113366;
+} */
