@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
+import "../css/CartItemMobile.css"
 
-
-export default function CartItemMobile({name,price,imgUrl,deleteFromCart,id,setTotal}) {
+export default function CartItemMobile({productName,price,imgUrl,deleteFromCart,id,setTotal}) {
     const [_quantity,setQuantity]=useState(0)
     
     function callDeleteFromCart(){
@@ -21,12 +21,12 @@ export default function CartItemMobile({name,price,imgUrl,deleteFromCart,id,setT
         }
     }
     return (
-        <div>
+        <div className="cart-item-mobile-con">
             <figure>
-                <img src={imgUrl} alt={name}/>
+                <img src={imgUrl} alt={productName}/>
             </figure>
             <div>
-                <p>{name}</p>
+                <p>{productName}</p>
                 <p>${price}</p>
             </div>
             <div>
@@ -35,7 +35,7 @@ export default function CartItemMobile({name,price,imgUrl,deleteFromCart,id,setT
                 <p onClick={updateQuantity}>-</p>
             </div>
             <div>
-                <i class="fas fa-trash-alt" onClick={deleteFromCart}></i>
+                <i class="fas fa-trash-alt" onClick={callDeleteFromCart}></i>
             </div>
         </div>
     )

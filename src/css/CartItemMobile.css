@@ -1,0 +1,27 @@
+/*  */
+.cart-item-mobile-con {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 1em 0.5em;
+  padding: 1em 0px;
+}
+
+.cart-item-mobile-con figure {
+  width: 4em;
+  height: 4em;
+  margin-right: 0.5em;
+  margin-left: 0px;
+}
+
+.cart-item-mobile-con img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media only screen and (min-width: 700px) {
+  .cart-item-mobile-con {
+    display: none;
+  }
+}

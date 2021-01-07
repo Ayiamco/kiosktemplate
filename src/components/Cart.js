@@ -2,6 +2,7 @@ import React,{useContext,useState} from 'react'
 import CartItem from "./CartItem";
 import NavBar from "./Navbar"
 import Footer from "./Footer"
+import CartItemMobile from "./CartItemMobile"
 
 import "../css/Cart.css"
 import {cartContext} from "../App"
@@ -27,7 +28,21 @@ export default function Cart() {
             <section id="cart-section">
                 <h1 id="cart-hd">Cart {cartItems.length===0 ? "is Empty": ""}</h1>
 
-                {/*Cart items table section*/}
+                {/* Csrt items table for small sreen */}
+                <section id="cart-items-mobile">
+                   { 
+                        cartItems.map(item =>{
+                            return <CartItemMobile key={item.id} productName={item.title} 
+                                        quantity={item.quantity} price={item.price} 
+                                        setTotal={setCurrentTotal} imgUrl={item.imgUrl}
+                                        deleteFromCart={deleteFromCart} id={item.id}
+                            />
+                        })
+                    }
+                </section>
+
+
+                {/*Cart items table section(for large screen)*/}
                 <div className="cart-items-con">
                     {
                         cartItems.length===0 ? "":
