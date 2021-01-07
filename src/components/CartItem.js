@@ -12,7 +12,6 @@ export default function CartItem({title,price,imgUrl,setTotal,deleteFromCart,id}
 
     function updateQuantity(e){
         if(e.target.className.includes("CQC-reduce")){
-            console.log("yes")
             if(_quantity>0){
                 setQuantity(prev=>{return prev -1})
                 setTotal(prev=> {return prev - price})

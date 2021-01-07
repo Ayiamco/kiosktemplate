@@ -3,8 +3,8 @@
   width: 100px;
   display: block;
   margin: auto;
-  margin-top: 2em;
-  margin-bottom: 2em;
+  padding-bottom: 50vh;
+  padding-top: 3em;
 }
 
 .lds-spinner {
