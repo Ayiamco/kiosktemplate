@@ -46,7 +46,7 @@
 }
 @media (max-width: 1000px) and (min-width: 800px) {
   .CF-con {
-    width: cal(100% - var(--padding-big-screen) - var(--padding-big-screen));
+    width: calc(100% - var(--padding-big-screen) - var(--padding-big-screen));
     margin-left: var(--padding-big-screen);
     margin-right: var(--padding-big-screen);
   }
@@ -84,7 +84,7 @@
   .CF-con {
     height: 15em;
     margin-top: -10em;
-    width: cal(100vw - var(--padding-big-screen) - var(--padding-big-screen));
+    width: calc(100vw - var(--padding-big-screen) - var(--padding-big-screen));
     margin-left: 7em;
     margin-right: 7em;
     box-shadow: 0 5px 10px;
