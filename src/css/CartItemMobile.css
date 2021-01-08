@@ -1,17 +1,19 @@
-/*  */
+/* cartItemMobile component styles */
 .cart-item-mobile-con {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  margin: 1em 0.5em;
-  padding: 1em 0px;
+  max-width: 100%;
+  margin: 1.5em 2em;
+  background-color: var(--col-2);
+  border-radius: 7px;
+  padding: 1em;
+  box-shadow: 0px 5px 10px rgb(216, 213, 213);
 }
 
 .cart-item-mobile-con figure {
-  width: 4em;
-  height: 4em;
-  margin-right: 0.5em;
-  margin-left: 0px;
+  width: 20%;
+  height: 20%;
+  margin: 0px;
 }
 
 .cart-item-mobile-con img {
@@ -19,7 +21,45 @@
   height: 100%;
   object-fit: contain;
 }
+.cart-item-mobile-desc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cart-item-mobile-desc p {
+  margin-bottom: 1em;
+}
 
+.cart-item-mobile-QC-con {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: large;
+}
+
+.cart-item-mobile-QC {
+  background-color: gray;
+  padding: 0.3em;
+  color: white;
+  border-radius: 50%;
+  height: 2em;
+  width: 2em;
+  margin: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.3em;
+}
+.cart-item-mobile-del-con {
+  display: flex;
+  align-items: center;
+  color: red;
+}
+#order-quantity {
+  font-weight: bold;
+}
 @media only screen and (min-width: 700px) {
   .cart-item-mobile-con {
     display: none;

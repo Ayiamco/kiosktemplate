@@ -9,13 +9,13 @@ export default function CartItemMobile({productName,price,imgUrl,deleteFromCart,
     }
 
     function updateQuantity(e){
-        if(e.target.className.includes("CQC-reduce")){
+        if(e.target.className.includes("cart-item-mobile-QC-decrease")){
             if(_quantity>0){
                 setQuantity(prev=>{return prev -1})
                 setTotal(prev=> {return prev - price})
             }
         }
-        if(e.target.className.includes("CQC-increase")){
+        if(e.target.className.includes("cart-item-mobile-QC-increase")){
             setQuantity(prev=>{return prev +1})
              setTotal(prev=> {return prev + price})
         }
@@ -25,16 +25,16 @@ export default function CartItemMobile({productName,price,imgUrl,deleteFromCart,
             <figure>
                 <img src={imgUrl} alt={productName}/>
             </figure>
-            <div>
+            <div className="cart-item-mobile-desc">
                 <p>{productName}</p>
                 <p>${price}</p>
             </div>
-            <div>
-                <p onClick={updateQuantity}>+</p>
-                <p>{_quantity}</p>
-                <p onClick={updateQuantity}>-</p>
+            <div className="cart-item-mobile-QC-con">
+                <p onClick={updateQuantity} className="cart-item-mobile-QC cart-item-mobile-QC-increase">+</p>
+                <p id="order-quantity">&#215; {_quantity}</p>
+                <p onClick={updateQuantity} className="cart-item-mobile-QC cart-item-mobile-QC-decrease">-</p>
             </div>
-            <div>
+            <div className="cart-item-mobile-del-con">
                 <i class="fas fa-trash-alt" onClick={callDeleteFromCart}></i>
             </div>
         </div>

@@ -26,7 +26,7 @@ export default function Cart() {
         <div className="cart-items-con-mn">
             <NavBar></NavBar>
             <section id="cart-section">
-                <h1 id="cart-hd">Cart {cartItems.length===0 ? "is Empty": ""}</h1>
+                <h1 id="cart-hd">Shopping Cart</h1>
 
                 {/* Csrt items table for small sreen */}
                 <section id="cart-items-mobile">
@@ -40,7 +40,6 @@ export default function Cart() {
                         })
                     }
                 </section>
-
 
                 {/*Cart items table section(for large screen)*/}
                 <div className="cart-items-con">
@@ -65,30 +64,29 @@ export default function Cart() {
                                     })
                                 }
                         </tbody>
-                        
                     </table>
                     }
-                    
-                    {/*Cart summary section*/}
-                    <section className="cart-summary">
-                        <div className="cart-summary-hd">Cart Summary</div>
-                        <div className="cart-summary-bd">
-                            <p>SubTotals</p>
-                            <p>${currentTotal.toFixed(2)}</p>
-                        </div>
-                        
-                        <div className="cart-summary-bd">
-                            <p>Delivery</p>
-                            <p>${ (currentTotal* 0.05).toFixed(2)}</p>
-                        </div>
-                        <div className="cart-summary-bd">
-                            <p>Total</p>
-                            <p>${ (currentTotal * 1.05).toFixed(2)}</p>
-                        </div>
-                        <div className="cart-summary-ft">
-                            <p>Checkout</p>
-                        </div>
-                    </section>
+                </div>
+            </section>
+
+            {/*Cart summary section*/}
+            <section className="cart-summary">
+                <div className="cart-summary-hd">Cart Summary</div>
+                <div className="cart-summary-bd">
+                    <p>SubTotals</p>
+                    <p>${currentTotal.toFixed(2)}</p>
+                </div>
+                
+                <div className="cart-summary-bd">
+                    <p>Delivery</p>
+                    <p>${ (currentTotal* 0.05).toFixed(2)}</p>
+                </div>
+                <div className="cart-summary-bd">
+                    <p>Total</p>
+                    <p>${ (currentTotal * 1.05).toFixed(2)}</p>
+                </div>
+                <div className="cart-summary-ft">
+                    <p>Checkout</p>
                 </div>
             </section>
             
