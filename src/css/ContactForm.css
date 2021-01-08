@@ -83,13 +83,13 @@
 
   .CF-con {
     height: 15em;
+    padding: 1em 5em;
+    margin: auto;
     margin-top: -10em;
-    width: calc(100vw - var(--padding-big-screen) - var(--padding-big-screen));
-    margin-left: 7em;
-    margin-right: 7em;
-    box-shadow: 0 5px 10px;
-    padding: 1em 10em;
     margin-bottom: 0em;
+    width: calc(100vw - 20em);
+    box-shadow: 0 5px 10px;
+
     display: flex;
     flex-direction: column;
     align-items: center;

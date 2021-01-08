@@ -1,25 +1,27 @@
-import React,{useState} from 'react'
-import {Link} from "react-router-dom"
+import React,{useState} from 'react';
+import {Link} from "react-router-dom";
 import * as Scroll from 'react-scroll';
 
-import "../css/Navbar.css"
-import logo from "../images/logo.png"
+import "../css/Navbar.css";
+import logo from "../images/logo.png";
 
 export default function Navbar() {
     const [isNavShow,setIsNavShow]=useState(false);
-    const [displayProperty,setDisplayProperty]=useState("none");
+    const [navlinksClass,setNavLinksClass]=useState("nav-links-con navlink-hidden");
     let ScrollLink = Scroll.Link;
     function ToggleNavLink(){
         setIsNavShow(!isNavShow)
         if(isNavShow){
-            setDisplayProperty("none")
+            setNavLinksClass("nav-links-con navlink-hidden")
         }
         else{
-            setDisplayProperty("flex")
+            setNavLinksClass("nav-links-con navlink-shown")
         }
     }
+
     return (
         <header id="nav-header"> 
+            {/* navbar mobile */}
             <div id="nav-mobile">
                 <figure>
                     <img src={logo} alt="logo"></img>
@@ -34,7 +36,7 @@ export default function Navbar() {
             
 
             {/* nav links */}
-            <div id="nav-links-con" style={{display:displayProperty}}>
+            <div id="nav-links-con" className={navlinksClass}>
                 <Link className="NB-link" to="/">Home</Link>
                 <Link className="NB-link" to="/"> Shop </Link>
                 <ScrollLink className="NB-link" to="footer-section" spy={true} smooth={true} duration={500}

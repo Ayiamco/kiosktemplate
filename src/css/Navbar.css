@@ -21,7 +21,7 @@
   width: 100%;
   height: 3em;
 }
-#nav-links-con {
+.nav-links-con {
   display: flex;
   width: 100%;
   padding: 1em 0em;
@@ -62,11 +62,28 @@
   color: var(--col-2);
   text-decoration: none;
 }
-#nav-links-con {
+.navlink-shown {
+  display: flex;
+}
+.navlink-hidden {
   display: none;
 }
+
 @media only screen and (min-width: 700px) {
-  #nav-mobile {
+  #nav-header {
+    flex-direction: row;
+    align-items: center;
+    padding-top: 1em 3em;
+  }
+  #nav-links-con {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0px;
+    font-size: large;
+    height: auto;
+  }
+  .nav-mobile {
     display: none;
   }
 }
