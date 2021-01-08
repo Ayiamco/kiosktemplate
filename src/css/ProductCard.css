@@ -103,7 +103,7 @@
   margin-left: 0px;
 }
 
-.ProductCard-container-ft button {
+.ProductCard-container-ft-btn {
   padding: 0.7em;
   background-color: var(--orange-1);
   border: none;
@@ -113,8 +113,14 @@
   cursor: pointer;
 }
 
-.ProductCard-container-ft button:hover {
+.ProductCard-container-ft-btn:hover {
   background-color: rgb(4, 4, 22);
+}
+.disabled {
+  cursor: not-allowed;
+}
+.disabled:hover {
+  background-color: var(--orange-1);
 }
 
 .ProductCard-container-ft div {

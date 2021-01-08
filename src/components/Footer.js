@@ -6,9 +6,9 @@ import "../css/Footer.css"
 import logo from "../images/logo.png"
 
 export default function Footer() {
-    let ScrollLink      = Scroll.Link;
+    let ScrollLink  = Scroll.Link;
     return (
-        <div  className="Footer-container">
+        <div  className="Footer-container" id="footer-section" >
             {/* Contact info section */}
             <ContactForm></ContactForm>
             <div className="Footer-con-mn">

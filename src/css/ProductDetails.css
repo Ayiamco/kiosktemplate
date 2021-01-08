@@ -11,6 +11,7 @@
   left: 0;
   padding-bottom: 2em;
   overflow: auto;
+  margin-top: 5em;
 }
 
 #ProductDetails-close {

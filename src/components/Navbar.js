@@ -37,7 +37,7 @@ export default function Navbar() {
             <div id="nav-links-con" style={{display:displayProperty}}>
                 <Link className="NB-link" to="/">Home</Link>
                 <Link className="NB-link" to="/"> Shop </Link>
-                <ScrollLink className="NB-link" to="contact" spy={true} smooth={true} duration={500}
+                <ScrollLink className="NB-link" to="footer-section" spy={true} smooth={true} duration={500}
                 style={{cursor:"pointer"}}
                 >Contact</ScrollLink>
                 <Link to="/cart" id="nav-cart-con">

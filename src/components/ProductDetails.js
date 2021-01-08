@@ -16,24 +16,21 @@ export default function ProductDetails({setDisplayProperty,setIsProductDetailsDi
     const setCartItems=useContext(cartContext)[1];
     const setCartItemsId=useContext(cartContext)[3];
     const setAllowScroll=useContext(scrollContext)[1];
-    
+    const cartItemsId=useContext(cartContext)[2];
     
     
     function closeDetails(){
         setDisplayProperty("none")
         setIsProductDetailsDisplayed(false)
-         setAllowScroll(true)
-         console.log("scrolling back to ")
+        setAllowScroll(true)
          scroller.scrollTo(`product-${productId}`, {
             duration: 0,
             delay: 5,
             smooth: true,
             offset:-85 
-            })
-         
-
-        
+            })  
     }
+
     async function addToCart(){
         const res=await fetch(url)
         const respJson=await res.json();
@@ -117,8 +114,9 @@ export default function ProductDetails({setDisplayProperty,setIsProductDetailsDi
                 
                 {/* buy product section */}
                 <div className="ProductDetails-buy-section">
-                    <button className="ProductDetails-btn" onClick={addToCart}>
-                        Add to cart
+                    <button className={cartItemsId.includes(productId)?"ProductDetails-btn disabled"
+                                                        :"ProductDetails-btn"} onClick={addToCart}>
+                        { cartItemsId.includes(productId)? "Already In Cart" :"Add to Cart"}
                      </button>
                     <button className="ProductDetails-btn">
                         Buy it now!

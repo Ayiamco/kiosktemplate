@@ -14,6 +14,7 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
     const setAllowScroll=useContext(scrollContext)[1];
     const setCartItems=useContext(cartContext)[1];
     const setCartItemsId=useContext(cartContext)[3];
+    const cartItemsId=useContext(cartContext)[2];
     
     async function addToCart(){
         const res=await fetch(url)
@@ -21,14 +22,14 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
         let hasItem=false;
         setCartItemsId(ids=>{
             if( ids.includes(respJson.id)===false){
+                console.log("item is not in  cart")
                 return [...ids,respJson.id]
             }
             else{
-                hasItem=true
+               hasItem=true
                 return [...ids]
             }
         })
-
         
         if( hasItem===false){
             setCartItems(cart=>{
@@ -107,7 +108,10 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
                      <p className="ProductCard-container-price-slash">${priceOld}</p>
                 </span>
                 <div>
-                    <button onClick={addToCart}>Add to Cart</button>
+                    <button onClick={addToCart}
+                     className={cartItemsId.includes(id)?"ProductCard-container-ft-btn disabled"
+                                                        :"ProductCard-container-ft-btn"}>
+                        { cartItemsId.includes(id)? "Already In Cart" :"Add to Cart"}</button>
                     <div className="ProductCard-icons">
                         <i class="far fa-eye " onClick={ToggleDetails}></i>
                         <i class="far fa-heart"></i>

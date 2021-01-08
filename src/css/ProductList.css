@@ -7,9 +7,14 @@
 
 .Product-list-hd {
   border-bottom: 1px solid grey;
-  padding-bottom: 0.5em;
+  padding-bottom: 0.1em;
   margin-top: 5em;
   margin: 1em 4em;
+  margin-top: 3em;
+  width: 5em;
+  text-align: center;
+  font-family: "fira sans";
+  color: var(--dark-blue-1);
 }
 
 @media only screen and (min-width: 700px) {
