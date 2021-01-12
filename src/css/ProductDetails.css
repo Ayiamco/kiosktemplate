@@ -3,15 +3,14 @@
   margin: 0;
   z-index: 10000;
   box-shadow: 0 5px 10px gray;
-  background-color: rgba(250, 250, 250, 1);
+  background-color: white;
   color: gray;
   position: fixed;
-  top: 0;
+  top: 10em;
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
   overflow: auto;
-  margin-top: 5em;
 }
 
 #ProductDetails-close {
