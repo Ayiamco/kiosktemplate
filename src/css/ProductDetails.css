@@ -1,18 +1,19 @@
 .ProductDetails-con-mn {
-  width: 100vw;
+  width: 100%;
   margin: 0;
   z-index: 10000;
   box-shadow: 0 5px 10px gray;
   background-color: white;
   color: gray;
-  position: fixed;
+  /* position: fixed;
   top: 10em;
   bottom: 0;
   left: 0;
   padding-bottom: 2em;
-  overflow: auto;
+  overflow: auto; */
 }
 
+/*
 #ProductDetails-close {
   color: gray;
   float: right;
@@ -38,6 +39,7 @@
 
 /* Product details description styles */
 
+/*
 .ProductDetails-img-container {
   width: 100%;
   height: 40vh;
@@ -57,6 +59,7 @@
 /* ################################## */
 
 /* Product Details price and avalabilty styles */
+/*
 .ProductDetails-price-con {
   display: flex;
   padding: 0.2em 0px;
@@ -96,6 +99,7 @@
 }
 
 /* buy product section styles*/
+/*
 .ProductDetails-buy-section {
   display: flex;
   align-items: center;
@@ -126,6 +130,7 @@
 /* ############################# */
 
 /* product specialty section styles */
+/*
 .ProductDetails-specialty-con > h2 {
   margin-bottom: 3px;
   margin-top: 1em;
@@ -188,4 +193,4 @@
     width: 30%;
     padding: 0.3 0.8;
   }
-}
+} */
