@@ -3,7 +3,7 @@
   margin: 0;
   box-shadow: 0 5px 10px gray;
   background-color: white;
-  color: gray;
+  color: rgb(24, 22, 22);
   position: absolute;
   overflow: auto;
   height: 100%;
@@ -144,7 +144,8 @@
 
 @media only screen and (min-width: 700px) {
   .ProductDetails-con-mn {
-    overflow: hidden;
+    overflow-x: hidden;
+    overflow-y: auto;
   }
   .ProductDetails-container {
     width: 100%;

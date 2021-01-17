@@ -43,8 +43,11 @@ export default function Navbar() {
                 style={{cursor:"pointer"}}
                 >Contact</ScrollLink>
                 <Link to="/cart" id="nav-cart-con">
-                    <i className="fas fa-shopping-cart "></i>
-                    <p> Cart</p>  
+                    <span>
+                        <i className="fas fa-shopping-cart "></i>
+                        <p> Cart</p>
+                    </span>
+                      
                 </Link>
             </div>
             

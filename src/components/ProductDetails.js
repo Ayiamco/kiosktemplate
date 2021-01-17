@@ -125,14 +125,7 @@ export default function ProductDetails({productId,isInCart,setIsInCart,closeDeta
                         <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
                     </div>
-                    <div>
-                        <i className="fas fa-circle"></i>
-                        <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
-                    </div>
-                    <div>
-                        <i className="fas fa-circle"></i>
-                        <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
-                    </div>
+                    
                 </div>
             </div>
             
