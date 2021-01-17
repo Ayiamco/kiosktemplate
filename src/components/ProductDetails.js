@@ -54,8 +54,10 @@ export default function ProductDetails({productId,isInCart,setIsInCart,closeDeta
         })
         .then(res=>{
             setProductDetail(res)
+            return;
         })
 
+        return;
     })
     
 

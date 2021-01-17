@@ -139,16 +139,33 @@
   background-color: var(--orange-1);
 }
 
-.modal-main {
+.modal {
+  position: fixed;
+  top: 7em;
+  left: 0.8em;
+  right: 0.8em;
+  bottom: 0px;
+  border: 1px solid #ccc;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 10px;
+  outline: none;
+  padding: 0px;
+  box-shadow: 5px 5px 5px rgb(216, 211, 211);
+  z-index: 100000;
+  width: calc(100% -2em);
+  margin: auto;
+  height: auto;
+}
+.modal-overlay {
   position: fixed;
   top: 0;
-  bottom: 0;
-  width: 100vw;
-  min-height: 110vh;
   left: 0;
-  z-index: 2;
-  overflow: auto;
-  opacity: 0.9;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.75);
+  z-index: 100;
 }
 @media (min-width: 200px) and (max-width: 350px) {
   .ProductCard-container {
@@ -167,5 +184,13 @@
   .ProductCard-newProduct-tag {
     margin-left: 11.6em;
     border-top-right-radius: 17px;
+  }
+
+  .modal {
+    overflow: hidden;
+    width: 70%;
+    left: 40px;
+    right: 40px;
+    bottom: 40px;
   }
 }

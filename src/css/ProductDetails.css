@@ -1,19 +1,14 @@
 .ProductDetails-con-mn {
   width: 100%;
   margin: 0;
-  z-index: 10000;
   box-shadow: 0 5px 10px gray;
   background-color: white;
   color: gray;
-  /* position: fixed;
-  top: 10em;
-  bottom: 0;
-  left: 0;
-  padding-bottom: 2em;
-  overflow: auto; */
+  position: absolute;
+  overflow: auto;
+  height: 100%;
 }
 
-/*
 #ProductDetails-close {
   color: gray;
   float: right;
@@ -30,7 +25,6 @@
 
 .ProductDetails-container {
   padding: 1em;
-  width: calc(100% - 2em);
 }
 
 .ProductDetails-container i {
@@ -38,8 +32,6 @@
 }
 
 /* Product details description styles */
-
-/*
 .ProductDetails-img-container {
   width: 100%;
   height: 40vh;
@@ -59,7 +51,6 @@
 /* ################################## */
 
 /* Product Details price and avalabilty styles */
-/*
 .ProductDetails-price-con {
   display: flex;
   padding: 0.2em 0px;
@@ -99,7 +90,6 @@
 }
 
 /* buy product section styles*/
-/*
 .ProductDetails-buy-section {
   display: flex;
   align-items: center;
@@ -130,7 +120,6 @@
 /* ############################# */
 
 /* product specialty section styles */
-/*
 .ProductDetails-specialty-con > h2 {
   margin-bottom: 3px;
   margin-top: 1em;
@@ -155,14 +144,8 @@
 
 @media only screen and (min-width: 700px) {
   .ProductDetails-con-mn {
-    width: 75%;
-    margin: 0 12.5%;
-    top: 4.9em;
-    height: 105vh;
-    overflow: auto;
-    z-index: 10000;
+    overflow: hidden;
   }
-
   .ProductDetails-container {
     width: 100%;
     height: 100%;
@@ -193,4 +176,4 @@
     width: 30%;
     padding: 0.3 0.8;
   }
-} */
+}

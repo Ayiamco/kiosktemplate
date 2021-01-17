@@ -3,7 +3,6 @@
   width: 100px;
   display: block;
   margin: auto;
-  padding-bottom: 50vh;
   padding-top: 3em;
 }
 
@@ -84,4 +83,9 @@
   100% {
     opacity: 0;
   }
+}
+
+#lds-p {
+  text-align: center;
+  margin: auto;
 }

@@ -53,7 +53,6 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
 
     const ToggleDetails =(e)=>{
         if(e.target.className==="far fa-eye"){
-            console.log("eye clicked")
             setIsModalOpen(true)
         }
         else{
@@ -68,13 +67,8 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
     return (
         <div className={`ProductCard-container`} name={`product-${id}`} >
             <Modal isOpen={modalIsOpen} onRequestClose={()=>{return setIsModalOpen(false)}}
-             shouldCloseOnOverlayClick={false} style={{
-                 content:{
-                     padding:"0px",
-                     boxShadow: " 5px 5px 5px  rgb(216, 211, 211)",
-                     top:"7em"
-                 }
-             }}>
+             shouldCloseOnOverlayClick={false} className="modal" overlayClassName="modal-overlay"
+            >
                 <ProductDetails productId={id}  setIsInCart={setIsInCart} isInCart={isInCart} closeDetails={ToggleDetails} >
                 </ProductDetails>
             </Modal>
