@@ -1,20 +1,19 @@
 import React,{useState,useContext}from 'react'
-import '../css/ProductCard.css';
+import Modal from "react-modal"
 
+import '../css/ProductCard.css';
 import {cartContext} from "../App"
 import ProductDetails from "./ProductDetails"
-import {scrollContext} from "./HomePage"
+Modal.setAppElement("#root")
 
 export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
 
-    const [isProductDetailsDisplayed,setIsProductDetailsDisplayed]=useState(false)
-    const [productDetailsStyle,setProductDetailsStyle]=useState("none")
     const url = "https://fakestoreapi.com/products/" + id
     const [isInCart,setIsInCart]=useState(false);
-    const setAllowScroll=useContext(scrollContext)[1];
     const setCartItems=useContext(cartContext)[1];
     const setCartItemsId=useContext(cartContext)[3];
     const cartItemsId=useContext(cartContext)[2];
+    const [modalIsOpen,setIsModalOpen]=useState(false);
     
     async function addToCart(){
         const res=await fetch(url)
@@ -52,17 +51,14 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
         return;
 }
 
-    const ToggleDetails =()=>{
-        if(isProductDetailsDisplayed){
-            setIsProductDetailsDisplayed(false)
-            setProductDetailsStyle("none")
-            setAllowScroll(true)
-            return;
+    const ToggleDetails =(e)=>{
+        if(e.target.className==="far fa-eye"){
+            console.log("eye clicked")
+            setIsModalOpen(true)
         }
-
-        setIsProductDetailsDisplayed(true)
-        setProductDetailsStyle("block")
-        setAllowScroll(false);
+        else{
+            setIsModalOpen(false);
+        }
         
         return;
     }
@@ -71,14 +67,19 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
 
     return (
         <div className={`ProductCard-container`} name={`product-${id}`} >
-            <div className="modal-main"style={{display:productDetailsStyle}}>
-            </div>
-            <ProductDetails productId={id} setDisplayProperty={setProductDetailsStyle} 
-                    setIsProductDetailsDisplayed={setIsProductDetailsDisplayed}
-                     productDetailsStyle={productDetailsStyle} setIsInCart={setIsInCart}
-                     isInCart={isInCart}
-                     
-            />
+            <Modal isOpen={modalIsOpen} onRequestClose={()=>{return setIsModalOpen(false)}}
+             shouldCloseOnOverlayClick={false} style={{
+                 content:{
+                     padding:"0px",
+                     boxShadow: " 5px 5px 5px  rgb(216, 211, 211)",
+                     top:"7em"
+                 }
+             }}>
+                <ProductDetails productId={id}  setIsInCart={setIsInCart} isInCart={isInCart} closeDetails={ToggleDetails} >
+                </ProductDetails>
+            </Modal>
+               
+           
              <div className="ProductCard-container-hd">
                 
                 <div className="ProductCard-img-container">
@@ -113,7 +114,7 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
                                                         :"ProductCard-container-ft-btn"}>
                         { cartItemsId.includes(id)? "Already In Cart" :"Add to Cart"}</button>
                     <div className="ProductCard-icons">
-                        <i class="far fa-eye " onClick={ToggleDetails}></i>
+                        <i class="far fa-eye " onClick={()=>{setIsModalOpen(true)}}></i>
                         <i class="far fa-heart"></i>
                     </div>
                     

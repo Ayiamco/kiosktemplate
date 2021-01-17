@@ -1,35 +1,15 @@
 import React,{useState,useContext,useEffect} from 'react'
-import * as Scroll from 'react-scroll';
-
-
 import "../css/ProductDetails.css";
 import {cartContext} from "../App";
-import {scrollContext} from "./HomePage";
 
 
-export default function ProductDetails({setDisplayProperty,setIsProductDetailsDisplayed,
-    productId,productDetailsStyle,isInCart }) {
+export default function ProductDetails({productId,isInCart,setIsInCart,closeDetails }) {
     
-    let scroller = Scroll.scroller;
     const url = "https://fakestoreapi.com/products/" + productId
     const [productDetail,setProductDetail]=useState({})
     const setCartItems=useContext(cartContext)[1];
     const setCartItemsId=useContext(cartContext)[3];
-    const setAllowScroll=useContext(scrollContext)[1];
     const cartItemsId=useContext(cartContext)[2];
-    
-    
-    function closeDetails(){
-        setDisplayProperty("none")
-        setIsProductDetailsDisplayed(false)
-        setAllowScroll(true)
-         scroller.scrollTo(`product-${productId}`, {
-            duration: 0,
-            delay: 5,
-            smooth: true,
-            offset:-85 
-            })  
-    }
 
     async function addToCart(){
         const res=await fetch(url)
@@ -80,9 +60,8 @@ export default function ProductDetails({setDisplayProperty,setIsProductDetailsDi
     
 
     return (
-        <div className={`ProductDetails-con-mn `} style={{display:productDetailsStyle}}>
+        <div className={`ProductDetails-con-mn `}>
         <i class="fas fa-times pd-close "  id="ProductDetails-close" onClick={closeDetails}></i>
-       
         
         <section className="ProductDetails-container">
             
