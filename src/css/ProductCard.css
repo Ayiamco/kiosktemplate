@@ -144,7 +144,7 @@
   top: 7em;
   left: 0.8em;
   right: 0.8em;
-  bottom: 0px;
+  bottom: 2em;
   border: 1px solid #ccc;
   background: #fff;
   overflow: auto;
@@ -157,6 +157,7 @@
   width: calc(100% -2em);
   margin: auto;
   height: auto;
+  padding-bottom: 2em;
 }
 .modal-overlay {
   position: fixed;

@@ -20,15 +20,15 @@ export default function Footer() {
                         We are one of the best company into the world and you can easily knock us.
                     </p>
                     <div className="contact-info">
-                        <i class="fas fa-map-marker-alt"></i>
+                        <i className="fas fa-map-marker-alt"></i>
                         <p>2873 Yorkshire Circle, NC, Carolina</p>
                     </div>
                     <div className="contact-info ">
-                        <i class="fas fa-envelope "></i>
+                        <i className="fas fa-envelope "></i>
                         <p className="">hello@template.com</p>
                     </div>
                     <div className="contact-info"> 
-                    <i class="fas fa-phone-volume "></i>
+                    <i className="fas fa-phone-volume "></i>
                         <p>(+234)700-000-0000</p>
                     </div>
                 </section>

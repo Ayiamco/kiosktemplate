@@ -108,8 +108,8 @@ export default function ProductCard({id,img,priceNow,priceOld,title,category}) {
                                                         :"ProductCard-container-ft-btn"}>
                         { cartItemsId.includes(id)? "Already In Cart" :"Add to Cart"}</button>
                     <div className="ProductCard-icons">
-                        <i class="far fa-eye " onClick={()=>{setIsModalOpen(true)}}></i>
-                        <i class="far fa-heart"></i>
+                        <i className="far fa-eye " onClick={()=>{setIsModalOpen(true)}}></i>
+                        <i className="far fa-heart"></i>
                     </div>
                     
                 </div>

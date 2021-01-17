@@ -28,8 +28,8 @@ export default function Navbar() {
                 </figure>
                 <div className="nav-mobile">
                     { 
-                    isNavShow ? <i class="fas fa-times " onClick={ToggleNavLink}/>
-                                : <i class="fas fa-bars" onClick={ToggleNavLink} ></i>    
+                    isNavShow ? <i className="fas fa-times " onClick={ToggleNavLink}/>
+                                : <i className="fas fa-bars" onClick={ToggleNavLink} ></i>    
                     } 
                 </div>
             </div>
@@ -43,7 +43,7 @@ export default function Navbar() {
                 style={{cursor:"pointer"}}
                 >Contact</ScrollLink>
                 <Link to="/cart" id="nav-cart-con">
-                    <i class="fas fa-shopping-cart "></i>
+                    <i className="fas fa-shopping-cart "></i>
                     <p> Cart</p>  
                 </Link>
             </div>

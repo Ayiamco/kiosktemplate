@@ -93,7 +93,7 @@
 .ProductDetails-buy-section {
   display: flex;
   align-items: center;
-  width: 100vw;
+  width: 100%;
 }
 .ProductDetails-btn {
   width: 45%;

@@ -5,7 +5,7 @@ export default function Loading() {
     return (
         <div>
             <div id="Loading-animation">
-                <div class="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+                <div className="lds-spinner"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
             </div>
             <p id="lds-p">Loading...</p>
         </div>

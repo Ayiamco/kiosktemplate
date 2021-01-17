@@ -63,7 +63,7 @@ export default function ProductDetails({productId,isInCart,setIsInCart,closeDeta
 
     return (
         <div className={`ProductDetails-con-mn `}>
-        <i class="fas fa-times pd-close "  id="ProductDetails-close" onClick={closeDetails}></i>
+        <i className="fas fa-times pd-close "  id="ProductDetails-close" onClick={closeDetails}></i>
         
         <section className="ProductDetails-container">
             
@@ -78,11 +78,11 @@ export default function ProductDetails({productId,isInCart,setIsInCart,closeDeta
                     <div className="ProductDetails-price-con-left">
                         <p>${productDetail.price}</p>
                         <div className="ProductDetails-stars">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
+                            <i className="fas fa-star"></i>
                         </div>
                     </div>
                     <div className="ProductDetails-price-con-line"></div>
@@ -110,27 +110,27 @@ export default function ProductDetails({productId,isInCart,setIsInCart,closeDeta
                 <div className="ProductDetails-specialty-con">
                     <h2>Speciality of This Product</h2>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Very Fresh and Quality Full</p>
                     </div>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Collect This From Natural Source</p>
                     </div>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
                     </div>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
                     </div>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
                     </div>
                     <div>
-                        <i class="fas fa-circle"></i>
+                        <i className="fas fa-circle"></i>
                         <p className="ProductDetails-specialty">Have a Good Range of Validity Date</p>
                     </div>
                 </div>
