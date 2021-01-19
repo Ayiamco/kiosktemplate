@@ -1,9 +1,9 @@
 import React,{useState,useContext}from 'react'
 import Modal from "react-modal"
 
-import '../css/ProductCard.css';
-import {cartContext} from "../App"
-import ProductDetails from "./ProductDetails"
+import './ProductCard.css';
+import {cartContext} from "../../App"
+import ProductDetails from "../ProductDetails/ProductDetails"
 Modal.setAppElement("#root")
 
 export default function ProductCard({id,img,priceNow,priceOld,title,category}) {

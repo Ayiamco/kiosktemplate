@@ -1,6 +1,6 @@
 import React,{useState,useContext,useEffect} from 'react'
-import "../css/ProductDetails.css";
-import {cartContext} from "../App";
+import "./ProductDetails.css";
+import {cartContext} from "../../App";
 
 
 export default function ProductDetails({productId,isInCart,setIsInCart,closeDetails }) {

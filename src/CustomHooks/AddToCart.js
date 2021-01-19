@@ -5,7 +5,6 @@ function AddToCart(url,setCartItems,setCartItemsId,cartItemsId){
         })
         .then(res=>{
            if(cartItemsId.includes(res.id)){
-                console.log("already in cart")
            }
            else{
                  setCartItems(prev=>{
@@ -20,6 +19,8 @@ function AddToCart(url,setCartItems,setCartItemsId,cartItemsId){
            }
            
             
+        }).catch((e)=>{
+            return "An Error Occured";
         })
     }
 

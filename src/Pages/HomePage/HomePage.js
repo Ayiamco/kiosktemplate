@@ -1,9 +1,9 @@
 import React,{useEffect,useState} from "react"
-import "../css/HomePage.css"
-import ProductList from  "./ProductList"
-import Navbar from "./Navbar";
-import Footer from "./Footer"
-import Loading from "./Loading"
+import "./HomePage.css"
+import ProductList from  "../../components/ProductList/ProductList"
+import Navbar from "../../components/NavBar/Navbar";
+import Footer from "../../components/Footer/Footer"
+import Loading from "../../components/Loading/Loading"
 
 
 function HomePage() {

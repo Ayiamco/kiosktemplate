@@ -1,6 +1,6 @@
 import React from "react";
 import {useState} from "react"
-import "../css/ContactForm.css";
+import "./ContactForm.css";
 
 function ContactForm(){
     const [email,setPassword]=useState("");

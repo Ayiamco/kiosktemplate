@@ -1,9 +1,9 @@
 import React from 'react'
-import ContactForm from './ContactForm'
+import ContactForm from '../ContactForm/ContactForm'
 import * as Scroll from 'react-scroll';
 
-import "../css/Footer.css"
-import logo from "../images/logo.png"
+import "./Footer.css"
+import logo from "../../images/logo.png"
 
 export default function Footer() {
     let ScrollLink  = Scroll.Link;

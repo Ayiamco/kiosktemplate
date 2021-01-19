@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "../css/CartItemMobile.css"
+import "./CartItemMobile.css"
 
 export default function CartItemMobile({productName,price,imgUrl,deleteFromCart,id,setTotal}) {
     const [_quantity,setQuantity]=useState(0);

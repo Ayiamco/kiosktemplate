@@ -1,11 +1,11 @@
 import React,{useContext,useState} from 'react'
-import CartItem from "./CartItem";
-import NavBar from "./Navbar"
-import Footer from "./Footer"
-import CartItemMobile from "./CartItemMobile"
+import CartItem from "../../components/CartItem/CartItem";
+import NavBar from "../../components/NavBar/Navbar"
+import Footer from "../../components/Footer/Footer"
+import CartItemMobile from "../../components/CartItemMoblile/CartItemMobile"
 
-import "../css/Cart.css"
-import {cartContext} from "../App"
+import "./Cart.css"
+import {cartContext} from "../../App"
 
 export default function Cart() {
     const [cartItems,setCartItems]=useContext(cartContext)

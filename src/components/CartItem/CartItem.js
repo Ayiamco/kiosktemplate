@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-import "../css/CartItem.css"
+import "./CartItem.css"
 
 // CartQuantityCounter from "./CartQuantityCounter"
 

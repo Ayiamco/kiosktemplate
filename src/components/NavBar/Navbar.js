@@ -2,8 +2,8 @@ import React,{useState} from 'react';
 import {Link} from "react-router-dom";
 import * as Scroll from 'react-scroll';
 
-import "../css/Navbar.css";
-import logo from "../images/logo.png";
+import "./Navbar.css";
+import logo from "../../images/logo.png";
 
 export default function Navbar() {
     const [isNavShow,setIsNavShow]=useState(false);

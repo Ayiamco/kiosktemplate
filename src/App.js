@@ -1,8 +1,7 @@
 import React ,{useState}from "react";
 import {HashRouter as Router,Route,Switch} from "react-router-dom";
-import Cart from "./components/Cart";
-import  "./css/general.css"
-import HomePage from "./components/HomePage"
+import Cart from "./Pages/Cart/Cart";
+import HomePage from "./Pages/HomePage/HomePage"
 
 export const cartContext= React.createContext();
 

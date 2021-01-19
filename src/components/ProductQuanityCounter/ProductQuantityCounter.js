@@ -1,5 +1,5 @@
 import React from 'react'
-import "../css/ProductQuantityCounter.css"
+import "./ProductQuantityCounter.css"
 
  function ProductQuantityCounter({productQuantity,setProductQuantity}) {
 
